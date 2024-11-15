@@ -1,0 +1,17 @@
+<mat-toolbar color="primary" class="navbar">
+  <span class="logo">notesmania.com</span>
+  <span class="center">{{ activeTab }}</span>
+  <span class="spacer"></span>
+  <button mat-icon-button [routerLink]="['/home']" routerLinkActive="active" (click)="setActiveTab('Home')">
+    <mat-icon>home</mat-icon>
+  </button>
+  <button mat-icon-button [routerLink]="['/about']" routerLinkActive="active" (click)="setActiveTab('About')">
+    <mat-icon>info</mat-icon>
+  </button>
+  <button mat-icon-button [routerLink]="['/contact']" routerLinkActive="active" (click)="setActiveTab('Contact')">
+    <mat-icon>contact_mail</mat-icon>
+  </button>
+  <button mat-icon-button [routerLink]="['/downloads']" routerLinkActive="active" (click)="setActiveTab('download Notes')">
+    <mat-icon>download</mat-icon>
+  </button>
+</mat-toolbar>

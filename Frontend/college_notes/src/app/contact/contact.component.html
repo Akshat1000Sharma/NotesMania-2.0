@@ -1,0 +1,22 @@
+<div class="container-fluid box mt-5 bg-black bg-opacity-10 p-5">
+    <h3>Get in Touch</h3>
+    <form [formGroup]="myForm">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" placeholder="Enter your first name">   
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="phoneNumber">Phone Number</label>
+          <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number">   
+        </div>
+        <div class="form-group">
+          <label for="query">What do you have in mind?</label>
+          <textarea id="query" name="query" placeholder="Enter your query"></textarea>
+        </div>
+        <button type="submit" class="submit-button" (click)="onSubmit()">Submit</button>
+    </form>
+</div>

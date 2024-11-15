@@ -1,0 +1,38 @@
+<div class="container-fluid box mt-5 bg-black bg-opacity-10 p-5">
+  <h3>Enter the following details</h3>
+  <form [formGroup]="myForm">
+    <div class="form-group">
+      <label for="college">Select College</label>
+      <select id="college" formControlName="college">
+        <option value="1">Shiv Nadar University</option>
+        <option value="2">IPS Academy</option>
+        <option value="3">Medi-Caps University</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="year">Select Year</label>
+      <select id="year" formControlName="year">
+        <option value="1">First</option>
+        <option value="2">Second</option>
+        <option value="3">Third</option>
+        <option value="4">Fourth</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="type">Select Branch</label>
+      <select id="type" formControlName="type">
+        <option value="1">Computer Science</option>
+        <option value="2">Mechinical Engineering</option>
+        <option value="3">Electronics and Communication</option>
+        <option value="4">Chemical Engineering</option>
+        <option value="5">Biotechnology</option>
+        <option value="6">Civil</option>
+        <option value="7">Core Common Curriculum</option>
+      </select>
+    </div>
+
+    <button type="submit" (click)="onSubmit()">Submit</button>
+  </form>
+</div>
